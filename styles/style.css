@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poppins:wght@700;800;900&display=swap');
+
+body {
+  font-family: DM Mono;
+  line-height: 1.2;
+  padding: 0 80px;
+
+  background-color: #000;
+  color: #fff;
+  margin: 30px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+header nav a {
+  margin-right: 25px;
+  font-size: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+a:hover {
+  border-bottom: 1px solid tomato;
+}
+
+h1 {
+  font-family: Apoc;
+  font-size: 80px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+.italic {
+  font-style: italic;
+}
+
+h2 {
+  font-family: Apoc;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: ghostwhite;
+  border: 2px solid black;
+  box-shadow: 0 0 15px 5px yellow;
+  padding: 20px 20px;
+  color: black;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+
+.modal p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.poem-modal {
+  display: flex;
+  justify-content: space-between;
+  /*   max-width: 900px;
+  width: 100%;   */
+}
+
+.poem-modal img {
+  max-width: 352px;
+  width: 100%;
+  height: 100%;
+}
+
+.poem-info {
+  margin-left: 30px;
+}
+
+.close {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: blue;
+  cursor: pointer;
+}
+
+.close p:hover,
+.close-about p:hover {
+  background-color: blue;
+  color: white;
+}
+
+.close-about {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: blue;
+  cursor: pointer;
+}
+
+p.still::before {
+  content: '↖︎ ';
+  font-size: 22px;
+}
+
+.d-none {
+  display: none;
+}
+
+h1 span {
+  transition: color 1s;
+}
+
+h1 span:hover {
+  cursor: url(pawn.png), auto;
+}
+
+h1 span:nth-child(1n):hover {
+  color: darkslateblue;
+}
+
+h1 span:nth-child(2n):hover {
+  color: tomato;
+}
+
+h1 span:nth-child(3n):hover {
+  color: #e9afa3;
+}
+
+h1 span:nth-child(4n):hover {
+  color: darkgreen;
+}
+
+h1 span:hover {
+  transition: color 0s;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+button {
+  font-family: DM Mono;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  .poem-modal {
+    flex-direction: column;
+  }
+
+  .poem-modal img {
+    max-width: 100%;
+  }
+
+  .poem-info {
+    margin-left: 0;
+  }
+
+  .poem-info h2 {
+    margin-top: 20px;
+  }
+
+  p.still::before {
+    content: '↑ ';
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    margin-top: 0;
+    height: 100px;
+    flex-direction: column-reverse;
+  }
+
+  button {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  header {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.6;
+    margin-top: 30px;
+  }
+
+  header nav a {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+}
