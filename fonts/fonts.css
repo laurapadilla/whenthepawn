@@ -1,27 +1,27 @@
 @font-face {
   font-family: Apoc;
-  src: url(/fonts/apoctrial-bold.otf);
+  src: url(./apoctrial-bold.otf);
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: Apoc;
-  src: url(/fonts/apoctrial-bolditalic.otf);
+  src: url(./apoctrial-bolditalic.otf);
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: Apoc;
-  src: url(/fonts/apoctrial-regular.otf);
+  src: url(./apoctrial-regular.otf);
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: Apoc;
-  src: url(fonts/apoctrial-regularitalic.otf);
+  src: url(./apoctrial-regularitalic.otf);
   font-style: italic;
   font-weight: normal;
 }
